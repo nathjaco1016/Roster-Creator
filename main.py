@@ -16,7 +16,6 @@ url = 'https://en.wikipedia.org/wiki/Charlotte_Hornets'
 doc = urlopen(url, context=ctx)
 html = doc.read()
 soup = BeautifulSoup(html, 'html.parser')
-markup = '<table class="toccolours" style>'
 tags = soup('table')
 
 plyr_table = []
